@@ -15,6 +15,10 @@ document.querySelectorAll("[data-email-link]").forEach((element) => {
 });
 document.getElementById("year").textContent = new Date().getFullYear();
 
+if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+  document.querySelectorAll("animateMotion").forEach((node) => node.remove());
+}
+
 const menuButton = document.querySelector(".menu-button");
 const nav = document.getElementById("site-nav");
 

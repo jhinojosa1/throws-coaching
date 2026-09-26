@@ -5,10 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="One-on-one and group shot put and discus coaching from a former Rice University Division I athlete."
+      content="Shot put coaching from Jorge Hinojosa, a former Rice University Division I thrower. One-on-one and group sessions focused on the circle, the power position, and the release."
     />
-    <meta name="theme-color" content="#071d19" />
-    <title>Jorge Hinojosa | Shot Put & Discus Coaching</title>
+    <meta name="theme-color" content="#14110e" />
+    <title>Jorge Hinojosa | Shot Put Coaching</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800&family=Schibsted+Grotesk:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
     <script src="site-config.js" defer></script>
     <script src="script.js" defer></script>
@@ -17,184 +23,223 @@
     <a class="skip-link" href="#main">Skip to content</a>
 
     <header class="site-header" id="top">
-      <a class="brand" href="#top" aria-label="Ringcraft Throws home">
+      <a class="brand" href="#top" aria-label="Ringcraft Shot Put home">
         <svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true">
-          <circle cx="24" cy="24" r="20" />
-          <path d="M13 29c7-8 15-12 24-12M14 35c6-6 13-9 21-10" />
-          <circle cx="31" cy="15" r="4" />
+          <circle cx="24" cy="26" r="15" />
+          <path d="M11.5 32.5a15 15 0 0 0 25 0" />
+          <circle class="shot-dot" cx="24" cy="11" r="3.4" />
         </svg>
-        <span><strong>RINGCRAFT</strong><small>THROWS</small></span>
+        <span><strong>RINGCRAFT</strong><small>SHOT PUT</small></span>
       </a>
       <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">
-        <span></span><span></span><span></span><span class="sr-only">Open menu</span>
+        <span></span><span></span><span></span>
+        <span class="sr-only">Open menu</span>
       </button>
       <nav id="site-nav" aria-label="Primary navigation">
+        <a href="#circle">The circle</a>
         <a href="#training">Training</a>
-        <a href="#about">About</a>
+        <a href="#about">Coach</a>
         <a href="#results">Results</a>
-        <a href="#approach">Approach</a>
-        <a class="nav-cta" href="#contact">Train with me</a>
+        <a class="nav-cta" href="#contact">Book the circle</a>
       </nav>
     </header>
 
     <main id="main">
       <section class="hero">
-        <div class="hero-copy reveal">
-          <p class="eyebrow">Shot put <span>•</span> Discus <span>•</span> <span data-location>Local training</span></p>
-          <h1>Own the ring.<br /><em>Send it farther.</em></h1>
+        <div class="hero-copy">
+          <p class="eyebrow">Shot put <span aria-hidden="true">/</span> Rice University <span aria-hidden="true">/</span> Division I</p>
+          <h1>Seven feet.<br /><em>Then the sector.</em></h1>
           <p class="hero-lede">
-            Technical throws coaching built on Division I experience—helping athletes move better,
-            throw with confidence, and compete at their best.
+            Shot put coaching for athletes who want a repeatable throw. We work the entry, the power
+            position, and the release until the throw from practice is the one that shows up on meet day.
           </p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#contact">Book a session <span>↗</span></a>
-            <a class="text-link" href="#training">Explore training <span>↓</span></a>
+            <a class="button button-primary" href="#contact">Book a session <span aria-hidden="true">↗</span></a>
+            <a class="text-link" href="#circle">Inside the circle <span aria-hidden="true">↓</span></a>
           </div>
-          <div class="proof-row" aria-label="Coaching credentials">
-            <div><strong>D1</strong><span>Rice athlete</span></div>
-            <div><strong>6</strong><span>Years coaching</span></div>
-            <div><strong>50+</strong><span>Athletes coached</span></div>
-          </div>
+          <dl class="proof-row">
+            <div><dt>Rice athlete</dt><dd>D1</dd></div>
+            <div><dt>Years coaching</dt><dd>6</dd></div>
+            <div><dt>Athletes coached</dt><dd>50+</dd></div>
+          </dl>
         </div>
 
-        <div class="hero-visual reveal" aria-label="Abstract illustration of a discus thrower">
-          <div class="sun-disc"></div>
-          <div class="orbit orbit-one"></div>
-          <div class="orbit orbit-two"></div>
-          <svg class="thrower" viewBox="0 0 600 700" role="img" aria-label="Athlete preparing to throw">
-            <path class="figure-fill" d="M307 112c29 0 52 23 52 52s-23 52-52 52-52-23-52-52 23-52 52-52Z" />
-            <path class="figure-stroke" d="M295 226c-28 36-41 86-34 128m0 0c6 38 34 75 78 100m-78-100-105 38m105-38 122-71m-44 171 82 105m-82-105-80 125m-103-167-83-6m310-103 75-75" />
-            <circle class="discus" cx="476" cy="193" r="24" />
+        <div class="circle-stage" aria-label="Diagram of the shot put circle, toe board, and sector">
+          <svg class="circle-diagram" viewBox="0 0 640 760" role="img">
+            <title>Throwing circle with toe board and sector</title>
+            <g class="sector-lines" fill="none">
+              <path d="M320 548 L168 92" />
+              <path d="M320 548 L472 92" />
+              <path class="sector-fill" d="M248 392 L198 150 L442 150 L392 392" />
+            </g>
+            <circle class="ring" cx="320" cy="548" r="128" />
+            <path class="toeboard" d="M246 468 A128 128 0 0 1 394 468" />
+            <path class="flight" d="M320 430 C348 330 392 230 430 118" />
+            <circle class="shot" cx="430" cy="118" r="15" fill="#e24a1b">
+              <animateMotion dur="1.7s" begin="0.35s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.16 0.84 0.24 1" path="M320,430 C348,330 392,230 430,118" />
+            </circle>
+            <g class="diagram-notes" fill="currentColor">
+              <text x="36" y="700">7 ft circle</text>
+              <text x="250" y="700">toe board</text>
+              <text x="470" y="700">34.92° sector</text>
+            </g>
           </svg>
-          <div class="visual-label"><span>01</span><p>Technique<br />creates distance.</p></div>
-          <p class="vertical-type">SPEED · RHYTHM · POWER</p>
+          <p class="stage-kicker"><span>01</span> The throw starts in the circle. Distance is decided before the shot leaves the neck.</p>
         </div>
       </section>
 
-      <section class="marquee" aria-label="Training focus">
-        <div>
-          <span>Better positions</span><i>✦</i><span>Faster releases</span><i>✦</i><span>Confident competitors</span><i>✦</i>
-          <span>Better positions</span><i>✦</i><span>Faster releases</span><i>✦</i><span>Confident competitors</span><i>✦</i>
+      <section class="spec-bar" aria-label="What this coaching covers">
+        <p><span>Event</span> Shot put</p>
+        <p><span>Patterns</span> Glide and rotational</p>
+        <p><span>Work</span> Positions, block, release</p>
+        <p><span>Setting</span> <span data-location>One-on-one &amp; group training</span></p>
+      </section>
+
+      <section class="section circle" id="circle">
+        <div class="section-heading">
+          <p class="eyebrow">Inside the circle</p>
+          <h2>Three places the throw is won.</h2>
         </div>
+        <ol class="phase-list">
+          <li class="reveal">
+            <span>01</span>
+            <div>
+              <h3>The pattern</h3>
+              <p>Glide or rotational. We pick the entry your body can repeat when the ring feels small and the flight is full, then we clean the first move until it is boringly consistent.</p>
+            </div>
+          </li>
+          <li class="reveal">
+            <span>02</span>
+            <div>
+              <h3>The power position</h3>
+              <p>This is where most distance is left on the concrete. A base you can drive from, separation through the middle, and a shot that stays on the neck instead of drifting off the path.</p>
+            </div>
+          </li>
+          <li class="reveal">
+            <span>03</span>
+            <div>
+              <h3>The release</h3>
+              <p>A real block, a long arm, and an angle that stays in the sector. The goal is a finish you can trust on the third throw, not only the one that felt good in warmups.</p>
+            </div>
+          </li>
+        </ol>
       </section>
 
       <section class="section training" id="training">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Ways to train</p>
-          <h2>Coaching that meets<br />you <em>where you are.</em></h2>
+        <div class="section-heading">
+          <p class="eyebrow">How we train</p>
+          <h2>Coaching built around one event.</h2>
         </div>
         <div class="training-grid">
           <article class="training-card card-dark reveal">
-            <div class="card-number">01</div>
-            <div>
-              <p class="card-kicker">Focused development</p>
-              <h3>One-on-one coaching</h3>
-              <p>Individual attention, clear cues, and session plans shaped around your event, experience, and goals.</p>
-              <ul>
-                <li>Personal technical assessment</li>
-                <li>Event-specific drills</li>
-                <li>Immediate feedback</li>
-              </ul>
-            </div>
-            <a href="#contact" aria-label="Ask about one-on-one coaching">Ask about 1:1 <span>↗</span></a>
+            <p class="card-kicker">01 — Focused</p>
+            <h3>One-on-one</h3>
+            <p>Your shot put, coached in the session. Cues stay specific to the throw you are actually making.</p>
+            <ul>
+              <li>Technical assessment of the full throw</li>
+              <li>Glide or rotational drill progressions</li>
+              <li>Immediate feedback on positions and release</li>
+            </ul>
+            <a href="#contact">Ask about 1:1 <span aria-hidden="true">↗</span></a>
           </article>
           <article class="training-card card-light reveal">
-            <div class="card-number">02</div>
-            <div>
-              <p class="card-kicker">Energy + accountability</p>
-              <h3>Group sessions</h3>
-              <p>Train alongside other throwers in a competitive, encouraging environment while still getting expert feedback.</p>
-              <ul>
-                <li>Small-group instruction</li>
-                <li>Progressive drill work</li>
-                <li>Team and club options</li>
-              </ul>
-            </div>
-            <a href="#contact" aria-label="Ask about group sessions">Ask about groups <span>↗</span></a>
+            <p class="card-kicker">02 — Shared ring</p>
+            <h3>Group sessions</h3>
+            <p>Train next to other throwers. The environment is competitive. The coaching is still aimed at your implement and your positions.</p>
+            <ul>
+              <li>Small-group shot put instruction</li>
+              <li>Shared drills, individual corrections</li>
+              <li>Team and club training available</li>
+            </ul>
+            <a href="#contact">Ask about groups <span aria-hidden="true">↗</span></a>
           </article>
         </div>
       </section>
 
       <section class="about" id="about">
-        <div class="about-art reveal" aria-hidden="true">
-          <span class="huge-type">R</span>
-          <svg viewBox="0 0 500 500">
-            <circle cx="250" cy="250" r="185" />
-            <circle cx="250" cy="250" r="115" />
-            <path d="M35 306c132-79 275-100 430-63" />
+        <div class="about-art" aria-hidden="true">
+          <svg viewBox="0 0 400 400">
+            <circle cx="200" cy="210" r="132" />
+            <path d="M92 250a132 132 0 0 0 216 0" />
+            <circle cx="200" cy="78" r="18" />
           </svg>
-          <p>Built in competition.<br />Shared through coaching.</p>
+          <p>Built in the circle.<br />Taught the same way.</p>
         </div>
         <div class="about-copy reveal">
-          <p class="eyebrow">Meet your coach</p>
-          <h2>Experience you can<br /><em>put into practice.</em></h2>
+          <p class="eyebrow">The coach</p>
+          <h2>A thrower who stayed in the event.</h2>
           <p class="large-copy">
-            I competed in track and field at <strong>Rice University</strong>, contributing points at the Division I level and learning what it takes to perform under pressure.
+            I competed in track and field at <strong>Rice University</strong>, scoring points at the Division I level and learning what holds up when the circle is loud and the throw has to count.
           </p>
           <p>
-            Before college, I was a highly ranked high-school discus thrower. For the past six years, I have brought those years in the ring to more than 50 athletes who want direct, practical coaching—whether they are learning the fundamentals or chasing championship performances.
+            Before college I was a highly ranked high-school discus thrower. For the past six years I have coached more than 50 athletes. The work on this site is the shot put: the circle, the toe board, and the details that add distance.
           </p>
-          <div class="signature" data-coach-name>Your Coach</div>
+          <p class="signature" data-coach-name>Jorge Hinojosa</p>
         </div>
       </section>
 
       <section class="results" id="results">
         <div class="results-intro reveal">
-          <p class="eyebrow">Athlete achievements</p>
-          <h2>Results that<br /><em>travel.</em></h2>
+          <p class="eyebrow">Athletes</p>
+          <h2>Marks that held up on meet day.</h2>
           <p>
-            From district meets to the national stage, Jorge's athletes have built the technique,
-            composure, and competitive confidence to deliver when it counts.
+            From district meets to the national stage, the athletes I have coached have put technique and composure into championship rounds.
           </p>
         </div>
         <div class="results-board reveal">
           <article class="result-feature">
             <span class="result-rank">3rd</span>
-            <div><strong>USATF Nationals</strong><small>National podium finish</small></div>
+            <div>
+              <strong>USATF Nationals</strong>
+              <small>National podium finish</small>
+            </div>
           </article>
           <div class="result-pair">
             <article><strong>2nd</strong><span>TAAF finisher</span></article>
             <article><strong>3rd</strong><span>TAAF finisher</span></article>
           </div>
           <div class="championship-counts">
-            <article><strong>10</strong><span>Regional<br />champions</span></article>
-            <article><strong>20</strong><span>District<br />champions</span></article>
-            <article><strong>50+</strong><span>Athletes<br />coached</span></article>
+            <article><strong>10</strong><span>Regional champions</span></article>
+            <article><strong>20</strong><span>District champions</span></article>
+            <article><strong>50+</strong><span>Athletes coached</span></article>
           </div>
         </div>
       </section>
 
       <section class="section approach" id="approach">
-        <div class="section-heading reveal">
-          <p class="eyebrow">The approach</p>
-          <h2>Simple cues.<br /><em>Purposeful reps.</em></h2>
+        <div class="section-heading">
+          <p class="eyebrow">A session</p>
+          <h2>Watch it. Change it. Repeat it.</h2>
         </div>
-        <div class="steps">
-          <article class="reveal">
+        <ol class="steps">
+          <li class="reveal">
             <span>01</span>
-            <h3>Assess</h3>
-            <p>Start with how you move and throw today. Identify the changes that will make the biggest difference.</p>
-          </article>
-          <article class="reveal">
+            <h3>Watch</h3>
+            <p>See the full throw first. Entry, power position, block, and where the shot actually leaves.</p>
+          </li>
+          <li class="reveal">
             <span>02</span>
-            <h3>Build</h3>
-            <p>Use focused drills to develop balance, rhythm, positions, and event-specific power.</p>
-          </article>
-          <article class="reveal">
+            <h3>Change</h3>
+            <p>Fix the one position that gives the most distance back. One cue, drilled until it sticks.</p>
+          </li>
+          <li class="reveal">
             <span>03</span>
-            <h3>Compete</h3>
-            <p>Turn good practice throws into repeatable performance when the pressure is on.</p>
-          </article>
-        </div>
+            <h3>Repeat</h3>
+            <p>Take that throw into competitive reps so meet day is a familiar circle, not a new one.</p>
+          </li>
+        </ol>
       </section>
 
       <section class="contact" id="contact">
         <div class="contact-copy reveal">
-          <p class="eyebrow">Start training</p>
-          <h2>Your next PR<br />starts <em>here.</em></h2>
-          <p>Tell me about the athlete, event, and goals. I’ll follow up with availability and the best training option.</p>
+          <p class="eyebrow">Start</p>
+          <h2>Tell me about the thrower.</h2>
+          <p>
+            Age, experience, and whether the athlete is gliding or spinning. I will follow up with availability and which setup fits.
+          </p>
           <a class="contact-email" href="mailto:jrhinojosa00@gmail.com" data-email-link>
-            <span>Email</span><strong data-email>jrhinojosa00@gmail.com</strong>
+            <span>Email</span>
+            <strong data-email>jrhinojosa00@gmail.com</strong>
           </a>
         </div>
         <form class="inquiry-form reveal" id="inquiry-form">
@@ -209,16 +254,16 @@
           <label>
             <span>I'm interested in</span>
             <select name="training">
-              <option>One-on-one coaching</option>
+              <option>One-on-one shot put</option>
               <option>Group sessions</option>
               <option>Team or club training</option>
             </select>
           </label>
           <label>
-            <span>Tell me about your goals</span>
-            <textarea name="message" rows="4" required placeholder="Event, experience level, goals, and any questions..."></textarea>
+            <span>The thrower</span>
+            <textarea name="message" rows="4" required placeholder="Age, glide or rotational, experience, and what you want to work on..."></textarea>
           </label>
-          <button class="button button-primary" type="submit">Send inquiry <span>↗</span></button>
+          <button class="button button-primary" type="submit">Send inquiry <span aria-hidden="true">↗</span></button>
           <p class="form-note">This opens your email app with the details filled in.</p>
         </form>
       </section>
@@ -227,14 +272,14 @@
     <footer>
       <a class="brand footer-brand" href="#top">
         <svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true">
-          <circle cx="24" cy="24" r="20" />
-          <path d="M13 29c7-8 15-12 24-12M14 35c6-6 13-9 21-10" />
-          <circle cx="31" cy="15" r="4" />
+          <circle cx="24" cy="26" r="15" />
+          <path d="M11.5 32.5a15 15 0 0 0 25 0" />
+          <circle class="shot-dot" cx="24" cy="11" r="3.4" />
         </svg>
-        <span><strong>RINGCRAFT</strong><small>THROWS</small></span>
+        <span><strong>RINGCRAFT</strong><small>SHOT PUT</small></span>
       </a>
-      <p>Shot put & discus coaching · <span data-location>Local training</span></p>
-      <p>© <span id="year"></span> <span data-coach-name>Your Coach</span></p>
+      <p>Shot put coaching · <span data-location>One-on-one &amp; group training</span></p>
+      <p>© <span id="year"></span> <span data-coach-name>Jorge Hinojosa</span></p>
     </footer>
   </body>
 </html>
